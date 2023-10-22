@@ -1,25 +1,22 @@
 #include <iostream>
 using namespace std;
-/*  Faz um algoritmo que receba um número e moste a sequência entre o número inserido até 100 (while). */
+/* Faz um algoritmo que receba uma senha e mostre “Correta!” se o valor
+corresponder a “12345”. Caso contrário, peça a senha novamente. (do ... while). */
 int main()
 {
-    int numi;
-    int i =1;
-
-    std::cout << "Introduze o numero de 0 a 100: ";
-    cin >> numi;
-
-    if (numi <= 100)
+    int senha;
+    int senhacorreta=12345;
+    do
     {
-        while (i < numi)
-        {
-            cout << i<<" ";
-            i++;
-            
+        std::cout << "Introduse a senha: ";
+        cin >> senha;
+        if(senha!=senhacorreta){
+            cout<<"senha errada "<<'\n';
         }
-    }
-    else{
-        cout<< "introduze um numero menor que 100";
+
+    } while (senha != senhacorreta);
+    {
+        cout << "Correta!";
     }
 
     return 0;
