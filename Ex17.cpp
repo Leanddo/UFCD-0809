@@ -18,7 +18,6 @@ int main()
         case 'A':
             std::cout << "O funcionario ira recerber 10% a mais no seu salario totalizando "<<(salario*0.10)+salario;
             break;
-        
         case 'B':
             std::cout << "O funcionario ira recerber 15% a mais no seu salario totalizando "<<(salario*0.15)+salario;
             break;

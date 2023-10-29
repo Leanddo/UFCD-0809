@@ -8,19 +8,18 @@ using namespace std;
 */
 int main()
 {
-    double altura[15];
-    double menor=200, maior=0, input;
+    
+    float altura ,menor=200, maior=0;
 
-    for(int i=0 ;i< 15;i++){
+    for(int i=1 ;i<= 15;i++){
         cout<<"Introduze uma altura: ";
-        cin>>input;
-        altura[i]=input;
+        cin>>altura;
 
-        if(input>maior){
-            input=maior;
+        if(altura>maior){
+            altura=maior;
         }
-        else if (input<menor){
-            input=menor;
+        else if (altura<menor){
+            altura=menor;
         }
 
     }

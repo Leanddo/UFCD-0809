@@ -7,10 +7,17 @@ Os dados utilizados para a contagem dos votos obedecem à seguinte codificação
     1,2,3,4 = voto para os respectivos candidatos;
     5 = voto nulo;
     6 = voto em branco;
+Elabore um algoritmo que leia o código do candidado em um voto. Calcule e escreva:
+
+    total de votos para cada candidato;
+    total de votos nulos;
+    total de votos em branco;
+
+Como finalizador do conjunto de votos, tem-se o valor 0.
 */
 int main()
 {
-    int input;
+    int input, nulo=0, branco=0;
     string candidatos[4];
     cout << "Introduze o codigo de voto:" << '\n'
          << "1,2,3,4 = voto para os respectivos candidatos;"
@@ -26,9 +33,11 @@ int main()
         {
         case 5:
             candidatos[i] = "Voto nulo";
+            nulo++;
             break;
         case 6:
             candidatos[i] = "Voto me branco";
+            branco++;
             break;
         default:
             cout << "Numero invalido "<<'\n';
@@ -39,6 +48,8 @@ int main()
     {
         cout << "Utilizador " << i << " = " << candidatos[i]<<'\n';
     }
+    cout<<"Votos nulos: "<<nulo;
+    cout<<"votos em branco: "<<branco;
 
     return 0;
 }
