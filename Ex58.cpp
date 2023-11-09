@@ -1,20 +1,17 @@
 #include <iostream>
 using namespace std;
-/*Escreve um programa que lê 6 valores inteiros e, em seguida, mostre os valores lidos pela ordem inversa.*/
+/* Faz um programa para ler a nota de 10 alunos e guarde num vetor. Calcule e imprima a média em geral. */
 
 int main()
 {
-    int vet[5];
+    int vet[10], soma = 0, conta = 0;
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 10; i++)
     {
-        cout << "Introduze 6 valores: ";
+        cout << "Introduza a nota do aluno " << i + 1 << ": ";
         cin >> vet[i];
+        soma = vet[i] + soma;
+        conta++;
     }
-    cout << "Ordem inversa: ";
-
-    for (int i = 5; i >= 0; i--)
-    {
-        cout << vet[i] << " ";
-    }
+    cout << "A media de todos os valores e de: " << soma / conta;
 }
