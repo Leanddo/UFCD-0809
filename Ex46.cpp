@@ -11,7 +11,7 @@ int main()
 
     do
     {
-        cout << "Introduze o primeiro numero: ";
+        cout << "Introduze um numero: ";
         cin >> input1;
         if (input1 < 0 )
         {
